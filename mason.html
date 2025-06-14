@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mason Airsoft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mason's Airsoft Hub</h1>
+        <p>Your Points: <span id="points">0</span></p>
+
+        <div class="section">
+            <h2>Calendar</h2>
+            <p>Propose a date for the next Airsoft battle:</p>
+            <input type="date" id="date-proposal">
+            <button onclick="proposeDate()">Propose Date</button>
+            <div id="calendar"></div>
+        </div>
+
+        <div class="section">
+            <h2>Shop</h2>
+            <div id="shop"></div>
+        </div>
+
+        <div class="section">
+            <h2>Your Cart</h2>
+            <div id="cart">
+                <p>All products given at next match.</p>
+                <ul id="cart-items"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Initialize Mason's view
+        displayPoints();
+        displayCalendar();
+        displayShop();
+        displayCart();
+    </script>
+</body>
+</html>
